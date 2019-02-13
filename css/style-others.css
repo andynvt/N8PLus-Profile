@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Monda');
+.others-avatar {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.others-avatar img {
+    height: 128px;
+    width: 128px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+@media screen and (min-width:768px) {
+    .others-avatar img {
+        height: 200px;
+        width: 200px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 100%;
+    }
+    .others-item {
+        /*         min-height: 480px*/
+    }
+}
+
+@media screen and (min-width:568px) {
+    .others-avatar img {
+        height: 150px;
+        width: 150px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 100%;
+    }
+    .others-item {
+        /*         min-height: 480px*/
+    }
+}
+
+#tai img {
+    /*    border: 8px groove #7F00FF*/
+}
+
+#phi img {
+    /*    border: 8px groove #6190E8*/
+}
+
+#phuc img {
+    /*    border: 8px groove #CB356B*/
+}
+
+#chuna img {
+    /*    border: 8px groove #da594c*/
+}
+
+.others-avatar h3 {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin: 10px 0;
+    letter-spacing: 4px
+}
+
+.others-avatar small {
+    font-size: 1rem;
+    letter-spacing: 1.2px;
+    min-height: 38px;
+    letter-spacing: 3px;
+    display: block;
+    text-transform: uppercase
+}
+
+.others-text {
+    max-width: 320px;
+    margin: auto;
+}
+
+.others-text p {
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 22px;
+}
+
+.others-text a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+
+.others-item {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0);
+    /*     min-height: 500px*/
+}
+
+.others-item:hover {
+    background: #f9f9f9;
+    -webkit-box-shadow: 0 1px 8px 1px rgba(0, 0, 0, .25);
+    box-shadow: 0 1px 8px 1px rgba(0, 0, 0, .25);
+    border: 1px solid;
+    z-index: 9;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px)
+}

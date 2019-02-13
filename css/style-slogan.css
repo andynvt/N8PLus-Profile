@@ -1,0 +1,71 @@
+.content-slogan .slogan-icon {
+    width: 128px;
+    height: 128px;
+    margin: 20px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    border: 6px dashed #e2e2e2;
+    text-align: center;
+    line-height: 160px;
+    border-radius: 100%;
+    color: #bdbdbd
+}
+
+@media screen and (min-width:768px) {
+    .content-slogan .slogan-icon {
+        width: 160px;
+        height: 160px;
+        margin: 30px auto;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        font-size: 4rem;
+    }
+}
+
+.content-slogan .slogan-icon img {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease
+}
+
+.content-slogan h2 {
+    font-family: "MenschRegular", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 4rem;
+    color: #2c2b2b;
+    line-height: 40px;
+    margin-bottom: 0px;
+    margin-top: 0;
+    letter-spacing: 3px;
+}
+
+.content-slogan p {
+    color: #838383;
+    max-width: 300px;
+    margin: 40px auto 0 auto;
+    line-height: 24px;
+    font-size: 1.5rem
+}
+
+.content-slogan p strong {
+    font-weight: 600
+}
+
+.slogan-grid {
+    border: 1px solid rgba(0, 0, 0, 0);
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    padding: 20px 0 40px
+}
+
+.slogan-grid:hover {
+    -webkit-box-shadow: 0 4px 8px 1px rgba(0, 0, 0, .1);
+    box-shadow: 0 4px 8px 1px rgba(0, 0, 0, .1);
+    border: 1px solid;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px)
+}

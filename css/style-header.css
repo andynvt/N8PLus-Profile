@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=Ropa+Sans|Yanone+Kaffeesatz');
+body {
+    overflow-x: hidden
+}
+
+.wrapper {
+    position: relative;
+    left: 0;
+    -webkit-transition: all .3s;
+    transition: all .3s position: relative;
+    min-height: 100vh;
+}
+
+.navbar {
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    min-height: 86px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: rgba(0, 0, 0, 0);
+    -webkit-transition: left .3s;
+    transition: left .3s;
+}
+
+.navbar-header {}
+
+.navbar-toggle {
+    outline: 0;
+    border: 0;
+    background: 0;
+    font-size: 2rem;
+    float: left;
+    padding: 10px 12px;
+    display: block;
+    color: #f9f9f9;
+    transition: all 0.5s;
+}
+
+.navbar-toggle:hover {
+    opacity: .8
+}
+
+.navbar-brand {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #f9f9f9;
+    line-height: 42px;
+    transition: all 0.3s;
+    padding: 10px 12px;
+    display: block;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.navbar-brand img {
+    height: 36px;
+    width: 120px;
+    transition: all .3s ease;
+}
+
+.navbar-brand small {
+    font-family: learning_curve_proregular;
+    margin-left: 5px;
+}
+
+.navbar-collapse {
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    height: 100vh;
+    width: 0;
+    overflow-x: hidden;
+    transition: width .3s;
+}
+
+.navbar-close {
+    color: #f1f1f1;
+    display: block;
+    float: right;
+    width: 54px;
+    border-radius: 5px
+}
+
+.navbar-nav {
+    position: absolute;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:767px) {
+    .navbar-brand {
+        line-height: 20px;
+    }
+    .navbar-brand img {
+        margin-left: -54px
+    }
+    .navbar-nav {
+        background: rgba(1, 1, 1, .85);
+        min-height: 100%
+    }
+    .navbar-collapse {
+        position: fixed;
+        z-index: 5;
+        left: 0;
+        height: 100vh;
+        background: rbga(0, 0, 0, 1);
+        width: 0;
+        overflow-x: hidden;
+        transition: width .3s;
+    }
+    .navbar-fixed-top .navbar-brand {
+        padding-top: 4px;
+        transition: all 0.4s ease;
+    }
+}
+
+.navbar-nav>li {
+    text-align: center
+}
+
+.navbar-nav>li:hover>a {
+    background: rgba(0, 0, 0, .4);
+    color: ghostwhite
+}
+
+.navbar-nav>li>a {
+    font-family: 'Ropa Sans', sans-serif;
+    padding: 10px 12px;
+    font-size: 1.5rem;
+    display: block;
+    text-transform: uppercase;
+    line-height: 3rem;
+    transition: all 0.3s;
+    letter-spacing: 2px;
+    font-weight: 600;
+    white-space: nowrap
+}
+
+.navbar-collapse::after,
+.navbar-collapse::before {
+    display: table;
+    clear: both
+}
+
+.wrapper.offLeft {}
+
+.navbar-collapse.in {
+    width: 100%;
+    z-index: 9;
+    position: absolute;
+}
+
+@media screen and (min-width:568px) {
+    .navbar-collapse.in {
+        width: 300px;
+        z-index: 9;
+        box-shadow: 1px 2px 8px 5px rgba(0, 0, 0, .5)
+    }
+}
+
+@media screen and (min-width:768px) {
+    .navbar {
+        min-height: 150px;
+        padding-top: 43px;
+        padding-bottom: 43px;
+        background: 0;
+    }
+    .navbar-header {
+        float: left
+    }
+    .navbar-brand {
+        color: #f2f2f2;
+        font-size: 2rem
+    }
+    .navbar-brand img {
+        left: auto;
+        width: auto;
+        height: auto;
+        margin-top: -25px
+    }
+    .navbar-fixed-top .navbar-brand:hover,
+    .navbar-brand:hover {
+        color: #999999 !important;
+        transition: all 0.3s;
+    }
+    .navbar-toggle {
+        display: none
+    }
+    .navbar-collapse {
+        position: static;
+        z-index: 5;
+        height: auto;
+        background: 0;
+        width: auto;
+        transition: width .3s;
+    }
+    .navbar-nav {
+        position: static;
+        float: left;
+        min-width: auto;
+        width: auto;
+    }
+    .navbar-right {
+        float: right !important;
+    }
+    .navbar-nav>li {
+        float: left
+    }
+    .navbar-nav>li>a {
+        color: #f2f2f2;
+        font-size: 1rem;
+        line-height: 40px;
+        border-bottom: 3px solid rgba(0, 0, 0, 0);
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+    }
+    .navbar-fixed-top .navbar-nav>li:hover>a,
+    .navbar-nav>li:hover>a,
+    .navbar-nav>li.active>a {
+        background-color: inherit;
+        color: #f2f2f2;
+        border-bottom: 3px solid #da594c !important;
+    }
+    .navbar-fixed-top .navbar-nav>li:hover>a {
+        background: rgba(0, 0, 0, 0.2)
+    }
+    .navbar.navbar-fixed-top {
+        height: 54px;
+    }
+    .navbar-fixed-top .navbar-brand img {
+        height: 24px !important;
+        width: auto
+    }
+    .navbar-fixed-top .navbar-brand strong {
+        font-size: 1.4rem;
+        transition: all .3s ease
+    }
+    .navbar-fixed-top .navbar-nav>li>a {
+        font-size: 0.9rem;
+        transition: all .3s ease;
+        line-height: 2rem;
+        padding: 13px 10px 6px
+    }
+}
+
+
+/*FIXED NAVBAR*/
+
+.navbar-fixed-top {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    min-height: 54px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background: rgba(0, 0, 0, .85);
+    box-shadow: 2px 1xp 6px 4px rgba(0, 0, 0, .6);
+    transition: all 0.4s ease;
+}
+
+.navbar-fixed-top .navbar-brand,
+.navbar-fixed-top .navbar-toggle,
+.navbar-fixed-top .navbar-nav>li>a {
+    color: #f2f2f2 !important;
+    transition: all 0.4s ease;
+}
+
+.navbar-fixed-top .navbar-brand {
+    font-size: 1.1rem;
+    transition: all .3s ease
+}
+
+.navbar-fixed-top .navbar-brand img {
+    height: 32px;
+    margin-top: 5px;
+    width: 120px;
+    transition: all .3s ease
+}

@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Droid+Sans|Josefin+Sans|Nunito|Titillium+Web+Encode+Sans+Expanded|Monda');
+@import url('https://fonts.googleapis.com/css?family=ABeeZee|Encode+Sans+Expanded|Monda|Yantramanav');
+.header-banner {
+    position: absolute;
+    top: 0
+}
+
+.header-banner img {
+    height: 100vh;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.custom-object-fit {
+    position: relative;
+    background-size: cover;
+    background-position: center center
+}
+
+.custom-object-fit img {
+    opacity: 0
+}
+
+.content-banner {
+    overflow: hidden
+}
+
+.banner-background {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100%
+}
+
+.overlay-5 {
+    background-color: rgba(0, 0, 0, .5);
+    transition: all .3s
+}
+
+.overlay-2,
+.overlay-5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    -webkit-transition: all .3s
+}
+
+.overlay-2 {
+    background-color: rgba(0, 0, 0, .2);
+    transition: all .3s
+}
+
+.banner-slogan {
+    z-index: 99;
+    top: 15%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    color: #fff;
+    font-family: Lato, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase
+}
+
+.banner-slogan h1 {
+    font-family: 'Droid Sans', sans-serif;
+    z-index: 9999;
+    text-transform: uppercase;
+    line-height: 3rem;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    letter-spacing: 6px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.banner-slogan h4 {
+    font-family: 'Cabin', sans-serif;
+    z-index: 9999;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin-top: 50px;
+}
+
+.banner-slogan p {
+    font-family: 'Yantramanav', sans-serif;
+    z-index: 9999;
+    font-weight: 100;
+    letter-spacing: 3px;
+    line-height: 21px;
+    top: 30% 
+}
+
+.banner-slogan a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    padding: 0 25px;
+    height: 52px;
+    line-height: 52px;
+    margin: 30px 0 0;
+    z-index: 9999;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    border: 2px solid;
+    border-radius: 30px;
+    display: inline-block;
+    -webkit-transition: all .3s;
+    transition: all .3s
+}
+
+.banner-slogan a i {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-right: 10px
+}
+
+.banner-slogan a:hover {
+    border: 2px solid #fff;
+    border-radius: 30px;
+    color: #2e3233;
+    background: #fff;
+    -webkit-transition: all .3s;
+    transition: all .3s
+}
+
+@media screen and (min-width:768px) {
+    .banner-slogan {
+        top: 50%;
+        transform: translateY(-50%)
+    }
+    .banner-slogan h1 {
+        font-family: 'Droid Sans', sans-serif;
+        z-index: 9999;
+        text-transform: uppercase;
+        line-height: 5rem;
+        font-size: 5rem;
+        letter-spacing: 5px;
+        letter-spacing: 6px;
+        font-weight: 200;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .banner-slogan h4 {
+        font-family: 'Cabin', sans-serif;
+        z-index: 9999;
+        font-weight: 500;
+        letter-spacing: 5px;
+        margin-top: 40px;
+    }
+    .banner-slogan p {
+        font-family: 'Yantramanav', sans-serif;
+        z-index: 9999;
+        font-weight: 100;
+        letter-spacing: 4px;
+        line-height: 28px;
+        margin-right: 15px
+    }
+    .banner-slogan a {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 600;
+        padding: 0 25px;
+        height: 52px;
+        line-height: 52px;
+        margin: 80px 0;
+        z-index: 9999;
+        font-size: 1rem;
+        letter-spacing: 2px;
+        border: 2px solid;
+        border-radius: 30px;
+        display: inline-block;
+        -webkit-transition: all .3s;
+        transition: all .3s
+    }
+    .banner-slogan a i {
+        font-size: 1rem;
+        letter-spacing: 2px;
+        margin-right: 10px
+    }
+    .banner-slogan a:hover {
+        border: 2px solid #fff;
+        border-radius: 30px;
+        color: #2e3233;
+        background: #fff;
+        -webkit-transition: all .3s;
+        transition: all .3s
+    }
+    .banner-slogan {
+        width: 750px
+    }
+    .banner-slogan h1 {
+        line-height: 6rem;
+        font-size: 5rem;
+        letter-spacing: 10px
+    }
+    .banner-slogan a,
+    .banner-slogan a i {
+        font-size: 1.2rem
+    }
+    .banner-slogan a {
+        padding: 0 25px;
+        height: 52px;
+        line-height: 52px
+    }
+}
+
+@media screen and (min-width:992px) {
+    .banner-slogan {
+        width: 970px
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .banner-slogan {
+        width: 1170px
+    }
+}
+
+.about-me {
+    z-index: 99;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    position: absolute;
+    color: #fff;
+    text-align: left;
+    -webkit-transform: translate(-50%, -20%);
+    transform: translate(-50%, -20%);
+    margin: 0 15px;
+    text-transform: uppercase;
+}
+
+.about-me h1 {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    z-index: 9999;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 3rem;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.about-me h1 strong {
+    color: #999
+}
+
+.about-me h2 {
+    z-index: 9999;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin-right: 15px;
+}
+
+.about-me a {
+    font-weight: 600;
+    margin: 20px 0;
+    z-index: 9999;
+    font-size: 1.rem;
+    letter-spacing: 2px;
+    border: 2px solid;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 12px 20px;
+    -webkit-transition: all .3s;
+    transition: all .3s
+}
+
+.about-me a i {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+
+.about-me a:hover {
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    color: #2e3233;
+    background: #ffffff;
+    -webkit-transition: all .3s;
+    transition: all .3s
+}
+
+@media screen and (min-width:768px) {
+    .banner-slogan {
+        width: 750px;
+    }
+    .about-me h1 {
+        font-weight: 800;
+        line-height: 6rem;
+        font-size: 3.7rem;
+        letter-spacing: 5px
+    }
+    .about-me a {
+        font-size: 1.2rem;
+        padding: 15px 25px;
+    }
+    .about-me a i {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .banner-slogan {
+        width: 970px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .banner-slogan {
+        width: 1170px;
+    }
+}

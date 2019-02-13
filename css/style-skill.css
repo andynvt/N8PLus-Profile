@@ -1,0 +1,142 @@
+.content-skill h1 {
+    margin: 0 0 15px
+}
+
+.skill-tab {
+    border-bottom: 1px solid;
+}
+
+.skill-tab>ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: padding-box
+}
+
+.skill-tab>ul>li {
+    margin: 0;
+    padding: 0;
+}
+
+.skill-tab>ul>li>a {
+    margin-right: 5px;
+    display: block;
+    color: #000;
+    background: #E2E2E2;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    width: 100px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 8px 8px 0 0;
+    transition: all 0.3s
+}
+
+.skill-tab>ul>li.active a,
+.skill-tab>ul>li:hover a {
+    background: #2e3233;
+    color: #f2f2f2
+}
+
+.skill-content {
+    overflow-x: hidden;
+}
+
+.skill-content>ul {
+    width: 300%;
+    overflow-x: hidden;
+    transition: all 0.3s ease;
+}
+
+.skill-content>ul>li {
+    margin: 0;
+    padding: 0;
+}
+
+.skill-content p {
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 24px;
+}
+
+.skill-content.one>ul {
+    transform: translateX(0);
+    transition: all 0.3s ease;
+}
+
+.skill-content.two>ul {
+    transform: translateX(-33.33333%);
+    transition: all 0.3s ease;
+}
+
+.skill-content.three>ul {
+    transform: translateX(-66.666666%);
+    transition: all 0.3s ease;
+}
+
+.skillbar {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    transition: 0.4s linear;
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -ms-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
+    padding-bottom: 28px;
+    transition: all .3s
+}
+
+.skillbar-title {
+    position: absolute;
+    left: 0;
+    width: 110px;
+    font-weight: bold;
+    color: #000;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: .9rem;
+    background: #6adcfa;
+    border: 0;
+}
+
+.skillbar-title span {
+    display: block;
+    height: 0px;
+    line-height: 35px;
+    background: 0
+}
+
+.skillbar-bar {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 0px;
+    background: #000;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    height: 35px;
+    line-height: 35px;
+    color: #ffffff;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 1rem;
+    letter-spacing: 2px
+}
